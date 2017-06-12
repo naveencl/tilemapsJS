@@ -1,0 +1,11 @@
+{
+    "context": "sfx",
+    "path": "assets/audio/",
+    "sounds": [{
+        "id": "walk",
+        "preload": true
+    },{
+        "id": "jump",
+        "preload": true
+    }]
+}

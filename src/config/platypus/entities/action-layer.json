@@ -1,0 +1,22 @@
+{
+    "id": "action-layer",
+    "components": [{
+        "type": "HandlerController"
+    },{
+        "type": "HandlerLogic"
+    },{
+        "type": "HandlerCollision"
+    },{
+        "type": "HandlerRender"
+    },{
+        "type": "Camera",
+        "width": 960,
+        "height": 720,
+        "overflow": true
+    },{
+        "type": "EntityContainer",
+        "childEvents": ["link-entity"]
+    },{
+        "type": "TiledLoader"
+    }]
+}

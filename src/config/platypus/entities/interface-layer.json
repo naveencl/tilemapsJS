@@ -1,0 +1,22 @@
+{
+    "id": "interface-layer",
+    "components": [{
+        "type": "HandlerLogic"
+    },{
+        "type": "HandlerRender"
+    },{
+        "type": "Camera",
+        "width": 800,
+        "height": 600
+    },{
+        "type": "EntityContainer", 
+        "entities": [{
+            "type": "button-left"
+        },{
+            "type": "button-right"
+        },{
+            "type": "button-jump"
+        }],
+        "childEvents": ["link-entity"]
+    }]
+}

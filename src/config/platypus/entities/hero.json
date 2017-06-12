@@ -1,0 +1,66 @@
+{
+    "id": "hero",
+    "components":[
+        {
+            "type": "EntityController",
+            "controlMap":{
+                "key:z":        {"triggered": "jump", "released": "jump"},
+                "key:space":    {"triggered": "jump", "released": "jump"},
+                "key:up-arrow": {"triggered": "jump", "released": "jump"},
+                "key:w":        {"triggered": "jump", "released": "jump"},
+                "key:left-arrow":   "go-left",
+                "key:a":               "go-left",
+                "key:right-arrow":     "go-right",
+                "key:d":             "go-right"
+            }
+        },{
+            "type": "RelayLinker",
+            "linkId": "ui-controls"
+        },{
+            "type": "Mover",
+            "gravity" : 0.003,
+            "jump": -1.6
+        },{
+            "type": "Orientation"
+        },{
+            "type": "LogicDirectionalMovement",
+            "speed": 0.6
+        },{
+            "type": "CollisionBasic",
+            "collisionType": "hero",
+            "solidCollisions": {
+                "block": "hit-solid",
+                "dirt": "hit-solid",
+                "tiles": "hit-solid"
+            }
+        },{
+            "type": "RenderSprite",
+            "animationMap":{	
+		"moving,grounded,left":  "run_R",
+		"moving,grounded,right": "run_R",
+		"moving,left":     "jump_R",
+		"moving,right":    "jump_R",
+		"grounded,left":         "idle_R",
+		"grounded,right":        "idle_R",
+		"default":      "jump_R"
+
+
+
+            },
+            "spriteSheet": "mookie"
+        },{
+            "type": "AudioSFX",
+            "audioMap": {
+                "grounded,moving": {"sound": "walk", "loop": 5000},
+                "just-jumped": "jump"
+            }
+        }
+    ],
+    "properties":{
+        "alwaysOn": true,
+        "z": 200,
+        "width": 24,
+        "height": 72,
+        "camera": "forward"
+    }
+}

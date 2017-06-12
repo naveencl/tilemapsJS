@@ -1,0 +1,26 @@
+{
+    "id": "button-play-game",
+    "components":[{
+        "type": "RenderSprite",
+        "spriteSheet": "buttons",
+        "interactive": true,
+        "animationMap": {
+            "pressed": "menu,pressed",
+            "default": "menu"
+        }
+    },{
+        "type": "LogicButton",
+        "useOnce": true
+    },{
+        "type": "SceneChanger",
+        "scene": "scene-level-1",
+        "aliases": {
+            "released": "new-scene"
+        }
+    }],
+    "properties": {
+        "x": 0,
+        "y": 350,
+        "z": 1
+    }
+}

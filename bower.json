@@ -1,0 +1,20 @@
+{
+    "name": "P_New_P",
+    "version": "0.0.3",
+    "dependencies": {
+        "normalize-less": "*",
+        "springroll": "~0.4",
+        "bellhop": "*",
+        "soundjs": "https://github.com/SpringRoll/SoundJS.git",
+        "pixi.js": "https://github.com/SpringRoll/pixi.js.git",
+        "springroll-platypus": "~0.11"
+    },
+    "ignore": [
+        ".gitignore",
+        ".gitattributes",
+        "src",
+        "springroll.json",
+        "Gruntfile.js",
+        "package.js"
+    ]
+}

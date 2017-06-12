@@ -1,0 +1,62 @@
+{ "columns":0,
+ "grid":
+    {
+     "height":1,
+     "orientation":"orthogonal",
+     "width":1
+    },
+ "margin":0,
+ "name":"CaveCartoon",
+ "spacing":0,
+ "tilecount":5,
+ "tileheight":900,
+ "tileproperties":
+    {
+     "3":
+        {
+         "entity":"hero"
+        }
+    },
+ "tilepropertytypes":
+    {
+     "3":
+        {
+         "entity":"string"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/images\/Big black rocks.png",
+         "imageheight":158,
+         "imagewidth":126
+        },
+     "1":
+        {
+         "image":"..\/images\/Ground covered with soil - loop.png",
+         "imageheight":85,
+         "imagewidth":139
+        },
+     "2":
+        {
+         "image":"..\/images\/Ground covered with soil - no-loop.png",
+         "imageheight":76,
+         "imagewidth":165
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/Users\/joel\/Desktop\/pbs\/NatureCat_small.png",
+         "imageheight":215,
+         "imagewidth":169
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/Users\/joel\/Desktop\/pbs\/cave background.jpeg",
+         "imageheight":900,
+         "imagewidth":1600
+        }
+    },
+ "tilewidth":1600,
+ "type":"tileset"
+}

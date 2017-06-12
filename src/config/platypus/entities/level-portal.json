@@ -1,0 +1,22 @@
+{
+    "id": "level-portal",
+    "components":[
+        {
+            "type": "LogicPortal"
+        },{
+            "type": "CollisionBasic",
+            "collisionType": "portal",
+            "immobile": true,
+            "softCollisions": {
+                "hero": "occupied-portal"
+            }
+        },{
+            "type": "SceneChanger",
+            "scene": "menu",
+            "transition": "fade-to-black"
+        }
+    ],
+    "properties":{
+        "z": 0
+    }
+}

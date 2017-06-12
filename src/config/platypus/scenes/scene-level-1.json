@@ -1,0 +1,11 @@
+{
+    "id": "scene-level-1",
+    "layers":[{
+        "type": "interface-layer"
+    },{
+        "type": "action-layer",
+        "properties": {
+            "level": "level-test-cave"
+        }
+    }]
+}

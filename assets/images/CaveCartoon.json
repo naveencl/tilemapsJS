@@ -1,0 +1,28 @@
+{
+
+"images": [
+    "CaveCartoon.png"
+],
+
+"frames": [
+    [1, 1, 1600, 900, 0, 0, 0],
+    [1603, 1, 169, 215, 0, 0, 0],
+    [1603, 218, 165, 76, 0, 0, 0],
+    [1603, 296, 139, 85, 0, 0, 0],
+    [1603, 383, 126, 158, 0, 0, 0]
+],
+
+"animations": {
+    "cave background.jpeg": { "frames": [0] },
+    "NatureCat_small": { "frames": [1] },
+    "Ground covered with soil - no-loop": { "frames": [2] },
+    "Ground covered with soil - loop": { "frames": [3] },
+    "Big black rocks": { "frames": [4] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:10227496eb8b9c5f7c65101f50b72440:e1d3fa05de0e018eddc1ea81185e6ade:3cc8b6470e5f5966066b809e01cc0227$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

@@ -1,0 +1,12 @@
+{
+    "id": "title-screen",
+    "components":[{
+        "type": "RenderSprite",
+        "spriteSheet": "title-screen"
+    }],
+    "properties": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    }
+}

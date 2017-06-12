@@ -1,0 +1,24 @@
+{
+    "id": "menu",
+    "layers":[{
+        "id": "menu-layer",
+        "components": [{
+            "type": "HandlerLogic"
+        },{
+            "type": "HandlerRender"
+        },{
+            "type": "Camera",
+            "width": 1600,
+            "height": 1200,
+            "overflow": true
+        },{
+            "type": "HandlerController"
+        },{
+            "type": "EntityContainer",
+            "entities": [
+                {"type": "title-screen"},
+                {"type": "button-play-game"}
+            ]
+        }]
+    }]
+}
