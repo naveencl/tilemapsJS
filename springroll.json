@@ -4,7 +4,12 @@
   "version": "0.0.1",
   "config": "src/config",
   "assets": ["assets/fla/js/*.js"],
-  "main": ["src/panels/*.js", "src/states/*.js", "src/*.js"],
+  "main": [
+    "src/prefabs/*.js",
+    "src/panels/*.js",
+    "src/states/*.js",
+    "src/*.js"
+  ],
   "libraries": [
     "components/preloadjs/lib/preloadjs.min.js",
     "components/bellhop/dist/bellhop.min.js",

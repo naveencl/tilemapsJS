@@ -4,5 +4,17 @@
     "x": 440,
     "y": 300
   },
-  "background": "cover-image"
+  "background": "cover-image",
+  "container": {
+    "align": "top-left",
+    "x": 0,
+    "y": 0,
+    "titleSafe": true
+  },
+  "titleText": {
+    "align": "top-left",
+    "x": 512,
+    "y": 60,
+    "titleSafe": true
+  }
 }

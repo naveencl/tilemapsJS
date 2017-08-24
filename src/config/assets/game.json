@@ -3,5 +3,30 @@
     "id": "GameBackground",
     "image": "assets/images/backgrounds/GameBackground.jpg",
     "type": "pixi"
+  },
+  {
+    "id": "mudsplat1",
+    "image": "assets/images/mud_splats/paint-2209579_1920.png",
+    "type": "pixi"
+  },
+  {
+    "id": "mudsplat2",
+    "image": "assets/images/mud_splats/paint-2235834_1920.png",
+    "type": "pixi"
+  },
+  {
+    "id": "mudsplat3",
+    "image": "assets/images/mud_splats/paint-2235838_1920.png",
+    "type": "pixi"
+  },
+  {
+    "id": "mudsplat4",
+    "image": "assets/images/mud_splats/paint-2209582_1920.png",
+    "type": "pixi"
+  },
+  {
+    "id": "mudsplat5",
+    "image": "assets/images/mud_splats/paint-2209586_1920.png",
+    "type": "pixi"
   }
 ]
