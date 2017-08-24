@@ -1,0 +1,7 @@
+[
+  {
+    "id": "GameBackground",
+    "image": "assets/images/backgrounds/GameBackground.jpg",
+    "type": "pixi"
+  }
+]

@@ -1,0 +1,8 @@
+{
+	"Game": [
+		{
+			"src": "assets/images/GameBackground.jpg",
+			"id": "GameBackground"
+		}
+	]
+}

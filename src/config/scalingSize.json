@@ -1,0 +1,6 @@
+{
+    // Optional properties "maxWidth" and "maxHeight"
+    // if doing responsive game design
+    "width": 1024,
+    "height": 768
+}

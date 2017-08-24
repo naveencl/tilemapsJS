@@ -1,0 +1,7 @@
+[
+  {
+    "id": "TitleBackground",
+    "image": "assets/images/backgrounds/TitleBackground.jpg",
+    "type": "pixi"
+  }
+]

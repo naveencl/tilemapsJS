@@ -1,0 +1,21 @@
+{
+  "name": "NatureArtBox",
+  "version": "0.0.1",
+  "dependencies": {
+    "normalize-less": "v0.1",
+    "springroll": "1.0.*",
+    "bellhop": "1.2.0",
+    "soundjs": "https://github.com/SpringRoll/SoundJS.git",
+    "easeljs": "https://github.com/SpringRoll/EaselJS.git",
+    "tweenjs": "https://github.com/SpringRoll/TweenJS.git",
+    "pixi.js": "https://github.com/SpringRoll/pixi.js.git"
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    "src",
+    "springroll.json",
+    "Gruntfile.js",
+    "package.js"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "playButton": {
+    "align": "top-left",
+    "x": 440,
+    "y": 300
+  },
+  "background": "cover-image"
+}
