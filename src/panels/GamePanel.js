@@ -39,7 +39,15 @@
     this.container = new PIXI.Container();
     this.addChild(this.container);
 
+    var renderTexture = new PIXI.RenderTexture(100, 100);
+    //console.log(PIXI.RenderTexture());
+    //var baseRenderTexture = new PIXI.BaseRenderTexture(100, 100);
+    console.log(this.app);
+  };
+
+  p.addMudSplats = function() {
     //mud splats - combination of 2 images
+    var mud_splats = this.app.config.data.mud_splats;
     var startX = 100;
     var offsetX = 200;
     var offsetY = 180;
@@ -50,7 +58,7 @@
     var startY = 120;
 
     for (i = 0; i < 10; i++) {
-      mudSplatGroup = new MudSplatGroup(this, totalMudSplats);
+      mudSplatGroup = new MudSplatGroup(this, totalMudSplats, mud_splats);
       mudSplatGroup.x = startX + offsetX * (i % 5);
       mudSplatGroup.y = startY + offsetY * Math.floor(i / 5);
       this.container.addChild(mudSplatGroup);
@@ -62,13 +70,14 @@
     startY = 520;
 
     for (i = 0; i < 10; i++) {
-      mudSplatGroup = new MudSplatGroup(this, totalMudSplats);
+      mudSplatGroup = new MudSplatGroup(this, totalMudSplats, mud_splats);
       mudSplatGroup.x = startX + offsetX * (i % 5);
       mudSplatGroup.y = startY + offsetY * Math.floor(i / 5);
       this.container.addChild(mudSplatGroup);
       this.mudSplatGroups.push(mudSplatGroup);
     }
   };
+
   /**
      * Un-setup the panel when exiting the state
      */

@@ -1,13 +1,15 @@
 (function() {
   //Import classes
   var Container = include("PIXI.Container"),
+    MudSplatter = include("nature_art_box.MudSplatter"),
     MudSplat = include("nature_art_box.MudSplat");
 
-  var MudSplatGroup = function(panel, count) {
+  var MudSplatGroup = function(panel, count, mudSplatData) {
     this.panel = panel;
     this.app = panel.app;
     Container.call(this);
 
+    this.mudSplatData = mudSplatData;
     this.totalMudSplats = count;
     this.mudSplats = [];
 
@@ -25,12 +27,19 @@
   };
 
   p.getRandomMudSplat = function() {
-    var mud_splats = this.app.config.data.mud_splats;
     var mudSplat = new MudSplat(
       this,
-      mud_splats[Math.round(Math.random() * (mud_splats.length - 1))]
+      this.mudSplatData[
+        Math.round(Math.random() * (this.mudSplatData.length - 1))
+      ]
     );
     return mudSplat;
+  };
+  p.animate = function() {
+    this.scale.set(MudSplatter.MudSplatInitScale);
+    createjs.Tween
+      .get(this.scale)
+      .to({ x: 1, y: 1 }, MudSplatter.MudSplatAnimTime, createjs.Ease.quadOut);
   };
 
   //Assign to namespace

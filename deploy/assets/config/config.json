@@ -1,1 +1,126 @@
-{"assets":{"game":[{"id":"GameBackground","image":"assets/images/backgrounds/GameBackground.jpg","type":"pixi"},{"id":"mudsplat1","image":"assets/images/mud_splats/paint-2209579_1920.png","type":"pixi"},{"id":"mudsplat2","image":"assets/images/mud_splats/paint-2235834_1920.png","type":"pixi"},{"id":"mudsplat3","image":"assets/images/mud_splats/paint-2235838_1920.png","type":"pixi"},{"id":"mudsplat4","image":"assets/images/mud_splats/paint-2209582_1920.png","type":"pixi"},{"id":"mudsplat5","image":"assets/images/mud_splats/paint-2209586_1920.png","type":"pixi"}],"title":[{"id":"TitleBackground","image":"assets/images/backgrounds/TitleBackground.jpg","type":"pixi"}]},"data":{"mud_splats":[{"name":"mudsplat1"},{"name":"mudsplat2"},{"name":"mudsplat3"},{"name":"mudsplat4"},{"name":"mudsplat5"}]},"scaling":{"transition":"center","game":{"playButton":{"align":"top-left","x":440,"y":300},"background":"cover-image","container":{"align":"top-left","x":0,"y":0,"titleSafe":true},"titleText":{"align":"top-left","x":512,"y":60,"titleSafe":true}},"title":{"playButton":{"align":"top-left","x":440,"y":300},"background":"cover-image"}},"scalingSize":{"width":1024,"height":768,"maxWidth":1280,"maxHeight":800},"sounds":{"music":{"context":"music","path":"assets/sound/music/","sounds":[{"id":"BackgroundMusic","preload":true}]},"sfx":{"context":"sfx","path":"assets/sound/sfx/","sounds":["ButtonClick","ButtonRollover","TransitionIn","TransitionOut"]},"vo":{"context":"vo","path":"assets/sound/vo/","sounds":[]}}}
+{
+	"assets": {
+		"game": [
+			{
+				"id": "GameBackground",
+				"image": "assets/images/backgrounds/GameBackground.jpg",
+				"type": "pixi"
+			},
+			{
+				"id": "mudsplat1",
+				"image": "assets/images/mud_splats/paint-2209579_1920.png",
+				"type": "pixi"
+			},
+			{
+				"id": "mudsplat2",
+				"image": "assets/images/mud_splats/paint-2235834_1920.png",
+				"type": "pixi"
+			},
+			{
+				"id": "mudsplat3",
+				"image": "assets/images/mud_splats/paint-2235838_1920.png",
+				"type": "pixi"
+			},
+			{
+				"id": "mudsplat4",
+				"image": "assets/images/mud_splats/paint-2209582_1920.png",
+				"type": "pixi"
+			},
+			{
+				"id": "mudsplat5",
+				"image": "assets/images/mud_splats/paint-2209586_1920.png",
+				"type": "pixi"
+			}
+		],
+		"title": [
+			{
+				"id": "TitleBackground",
+				"image": "assets/images/backgrounds/TitleBackground.jpg",
+				"type": "pixi"
+			}
+		]
+	},
+	"data": {
+		"mud_splats": [
+			{
+				"name": "mudsplat1"
+			},
+			{
+				"name": "mudsplat2"
+			},
+			{
+				"name": "mudsplat3"
+			},
+			{
+				"name": "mudsplat4"
+			},
+			{
+				"name": "mudsplat5"
+			}
+		]
+	},
+	"scaling": {
+		"transition": "center",
+		"game": {
+			"playButton": {
+				"align": "top-left",
+				"x": 440,
+				"y": 300
+			},
+			"background": "cover-image",
+			"container": {
+				"align": "top-left",
+				"x": 0,
+				"y": 0,
+				"titleSafe": true
+			},
+			"titleText": {
+				"align": "top-left",
+				"x": 512,
+				"y": 60,
+				"titleSafe": true
+			}
+		},
+		"title": {
+			"playButton": {
+				"align": "top-left",
+				"x": 440,
+				"y": 300
+			},
+			"background": "cover-image"
+		}
+	},
+	"scalingSize": {
+		"width": 1024,
+		"height": 768,
+		"maxWidth": 1280,
+		"maxHeight": 800
+	},
+	"sounds": {
+		"music": {
+			"context": "music",
+			"path": "assets/sound/music/",
+			"sounds": [
+				{
+					"id": "BackgroundMusic",
+					"preload": true
+				}
+			]
+		},
+		"sfx": {
+			"context": "sfx",
+			"path": "assets/sound/sfx/",
+			"sounds": [
+				"ButtonClick",
+				"ButtonRollover",
+				"TransitionIn",
+				"TransitionOut"
+			]
+		},
+		"vo": {
+			"context": "vo",
+			"path": "assets/sound/vo/",
+			"sounds": []
+		}
+	}
+}

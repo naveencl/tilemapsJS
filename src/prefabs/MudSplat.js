@@ -1,31 +1,25 @@
 (function() {
   //Import classes
-  var Container = include("PIXI.Sprite");
+  var Sprite = include("PIXI.Sprite"),
+    MudSplatter = include("nature_art_box.MudSplatter");
 
   var MudSplat = function(panel, data) {
     this.panel = panel;
     this.app = panel.app;
-    Container.call(this, this.app.getCache(data.name));
+    Sprite.call(this, this.app.getCache(data.name));
     this.anchor.set(0.5);
     this.name = data.name;
 
     //rotate randomly
-    this.rotation = this.getRandomRotation();
+    this.rotation = MudSplatter.getRandomRotation();
 
     //scale
-    this.scale.x = this.getRandomScale();
-    this.scale.y = this.getRandomScale();
+    this.scale.x = MudSplatter.getRandomScale();
+    this.scale.y = MudSplatter.getRandomScale();
+    this.tint = 0x00ff00;
   };
 
-  var p = extend(MudSplat, Container);
-
-  p.getRandomScale = function() {
-    return 0.6 + Math.random() * 0.6;
-  };
-
-  p.getRandomRotation = function() {
-    return Math.random() * (Math.PI * 2);
-  };
+  var p = extend(MudSplat, Sprite);
 
   //Assign to namespace
   namespace("nature_art_box").MudSplat = MudSplat;

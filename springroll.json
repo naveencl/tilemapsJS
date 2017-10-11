@@ -5,6 +5,7 @@
   "config": "src/config",
   "assets": ["assets/fla/js/*.js"],
   "main": [
+    "src/algorithms/*.js",
     "src/prefabs/*.js",
     "src/panels/*.js",
     "src/states/*.js",
