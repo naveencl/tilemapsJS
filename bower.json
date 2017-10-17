@@ -8,7 +8,8 @@
     "soundjs": "https://github.com/SpringRoll/SoundJS.git",
     "easeljs": "https://github.com/SpringRoll/EaselJS.git",
     "tweenjs": "https://github.com/SpringRoll/TweenJS.git",
-    "pixi.js": "https://github.com/SpringRoll/pixi.js.git"
+    "pixi.js": "https://github.com/SpringRoll/pixi.js.git",
+    "canvas-drawing-tool": "https://github.com/pbs/Canvas-Drawing-Tool.git"
   },
   "ignore": [
     ".gitignore",

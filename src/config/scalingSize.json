@@ -3,6 +3,6 @@
     // if doing responsive game design
     "width": 1024,
     "height": 768,
-    "maxWidth": 1280,
-    "maxHeight": 800
+    "maxWidth": 1366,
+    "maxHeight": 768
 }

@@ -9,7 +9,7 @@
   var app = new Application({
     fps: 60,
     name: "Nature Art Box",
-    state: "game",
+    state: "title",
     canvasId: "stage",
     configPath: "assets/config/config.json",
     manifestsPath: "assets/config/manifests.json",

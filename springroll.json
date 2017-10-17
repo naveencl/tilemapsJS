@@ -5,6 +5,7 @@
   "config": "src/config",
   "assets": ["assets/fla/js/*.js"],
   "main": [
+    "src/brushes/*.js",
     "src/algorithms/*.js",
     "src/prefabs/*.js",
     "src/panels/*.js",
@@ -12,6 +13,7 @@
     "src/*.js"
   ],
   "libraries": [
+    "src/styles.css",
     "components/preloadjs/lib/preloadjs.min.js",
     "components/bellhop/dist/bellhop.min.js",
     "components/soundjs/lib/soundjs.min.js",
@@ -35,9 +37,12 @@
     "components/springroll/dist/modules/easeljs-ui.min.js",
     "components/springroll/dist/modules/pixi-display.min.js",
     "components/springroll/dist/modules/pixi-animation.min.js",
-    "components/springroll/dist/modules/pixi-spine.min.js"
+    "components/springroll/dist/modules/pixi-spine.min.js",
+    "components/springroll/dist/modules/pixi-ui.min.js",
+    "components/canvas-drawing-tool/dist/stickerbook.dist.js"
   ],
   "librariesDebug": [
+    "src/styles.css",
     "components/preloadjs/lib/preloadjs.combined.js",
     "components/bellhop/dist/bellhop.js",
     "components/soundjs/lib/soundjs.min.js",
@@ -63,7 +68,9 @@
     "components/springroll/dist/modules/easeljs-ui.js",
     "components/springroll/dist/modules/pixi-display.js",
     "components/springroll/dist/modules/pixi-animation.js",
-    "components/springroll/dist/modules/pixi-spine.js"
+    "components/springroll/dist/modules/pixi-spine.js",
+    "components/springroll/dist/modules/pixi-ui.js",
+    "components/canvas-drawing-tool/dist/stickerbook.combined.js"
   ],
   "librariesCopy": {
     "components/soundjs/lib/FlashAudioPlugin.swf": "deploy/assets/swfs/"

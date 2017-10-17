@@ -1,8 +1,15 @@
 {
   "playButton": {
     "align": "top-left",
-    "x": 440,
-    "y": 300
+    "x": 447,
+    "y": 550,
+    "titleSafe": true
+  },
+  "titleText": {
+    "align": "top-left",
+    "x": 512,
+    "y": 100,
+    "titleSafe": true
   },
   "background": "cover-image"
 }

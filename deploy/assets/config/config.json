@@ -37,6 +37,12 @@
 				"id": "TitleBackground",
 				"image": "assets/images/backgrounds/TitleBackground.jpg",
 				"type": "pixi"
+			},
+			{
+				"id": "ButtonAtlas",
+				"image": "assets/images/button.png",
+				"atlas": "assets/images/button.json",
+				"type": "pixi"
 			}
 		]
 	},
@@ -84,8 +90,15 @@
 		"title": {
 			"playButton": {
 				"align": "top-left",
-				"x": 440,
-				"y": 300
+				"x": 447,
+				"y": 550,
+				"titleSafe": true
+			},
+			"titleText": {
+				"align": "top-left",
+				"x": 512,
+				"y": 100,
+				"titleSafe": true
 			},
 			"background": "cover-image"
 		}
@@ -93,8 +106,8 @@
 	"scalingSize": {
 		"width": 1024,
 		"height": 768,
-		"maxWidth": 1280,
-		"maxHeight": 800
+		"maxWidth": 1366,
+		"maxHeight": 768
 	},
 	"sounds": {
 		"music": {

@@ -22,28 +22,7 @@
   /**
      * Setup the state, this happens on each state entering
      */
-  p.setup = function() {
-    //background
-    this.background = new PIXI.Sprite(this.app.getCache("GameBackground"));
-    this.addChild(this.background);
-
-    //title
-    this.titleText = new PIXI.Text("Nature Art Box", {
-      font: "bold 45px Arial",
-      fill: "#F7EDCA"
-    });
-    this.titleText.anchor.set(0.5);
-    this.addChild(this.titleText);
-
-    //container for adding all mud splats
-    this.container = new PIXI.Container();
-    this.addChild(this.container);
-
-    var renderTexture = new PIXI.RenderTexture(100, 100);
-    //console.log(PIXI.RenderTexture());
-    //var baseRenderTexture = new PIXI.BaseRenderTexture(100, 100);
-    console.log(this.app);
-  };
+  p.setup = function() {};
 
   p.addMudSplats = function() {
     //mud splats - combination of 2 images
@@ -83,8 +62,6 @@
      */
   p.teardown = function() {
     s.teardown.call(this);
-    this.removeChild(this.background);
-    this.background = null;
   };
 
   //Assign to namespace

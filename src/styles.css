@@ -1,0 +1,7 @@
+.hidden {
+  display: none !important;
+}
+#stickerbook-canvas-container {
+  width: 100vw;
+  height: 75vw;
+}
