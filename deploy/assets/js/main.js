@@ -904,11 +904,12 @@ var MudBrush = fabric.util.createClass(fabric.BaseBrush, {
 	 * When the transition is done playing and we're fully in
 	 */
   p.enterDone = function() {
+    //this.app.on("resize", this.onResize.bind(this));
+    this.onResize(this.app.realWidth, this.app.realHeight);
     document.getElementById("stage").classList.add("hidden");
     document.getElementById("stickerbook-container").classList.remove("hidden");
 
     this.initStickerBook();
-
     this.backButton = document.getElementById("back");
     this.backButton.addEventListener("click", this.onBack);
 
@@ -921,6 +922,16 @@ var MudBrush = fabric.util.createClass(fabric.BaseBrush, {
     this.addClickEventListener("spray");
     this.addClickEventListener("pattern");
     this.addClickEventListener("fill");
+  };
+  p.onResize = function(width, height) {
+    var aspectRatio = width / height;
+    var scaleH = (100 / aspectRatio) | 0;
+    console.log("Aspect Ratio: " + aspectRatio);
+    console.log("width: " + width, "height: " + height);
+    console.log("ScaleH: " + scaleH);
+    var resizeElement = document.getElementById("stickerbook-canvas-container");
+    resizeElement.style.width = "100vw";
+    resizeElement.style.height = scaleH + "vw";
   };
   p.addClickEventListener = function(name) {
     var button = document.getElementById(name);
@@ -1007,7 +1018,7 @@ var MudBrush = fabric.util.createClass(fabric.BaseBrush, {
     this.stickerbook.availableBrushes.berriessquash = BerriesBrush;
 
     // go ahead and set some initial state
-    this.stickerbook.backgroundManager.setPositioning("fit-width");
+    this.stickerbook.backgroundManager.setPositioning("fit-height");
     //this.stickerbook.setColor("#0000FF");
     this.stickerbook.setBrush("pencil");
   };

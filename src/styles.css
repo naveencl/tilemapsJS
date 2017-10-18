@@ -5,3 +5,7 @@
   width: 100vw;
   height: 75vw;
 }
+#controls {
+  position: absolute;
+  top: 0;
+}
